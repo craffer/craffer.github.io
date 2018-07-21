@@ -16,3 +16,5 @@ My website, for professional and personal use.
 	- Possibly require password access
 	- Ability to host videos, pictures, etc.
 - Add SEO
+- Add favicon
+
