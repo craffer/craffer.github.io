@@ -19,3 +19,4 @@ My website, for professional and personal use.
 	- Ability to host videos, pictures, etc.
 - Add SEO
 - Add .htaccess for password protection, cleaner links
+
