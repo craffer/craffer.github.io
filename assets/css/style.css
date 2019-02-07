@@ -6,10 +6,6 @@ body {
     color: #D4D8D7;
 }
 
-body, html, .container-fluid {
-    height: 100%;
-}
-
 a {
     color: #73A3BC;
     text-decoration: none;
@@ -21,13 +17,8 @@ a:hover {
 }
 
 h1 {
-    margin-top: 0px;
+    margin-top: 6px;
     font-size: 32px;
-}
-
-img {
-    max-width: 100%;
-    max-height: 35%; 
 }
 
 i {
@@ -35,8 +26,47 @@ i {
     padding-right: 3px;
 }
 
+.avatar {
+    object-fit: cover;
+    border-radius: 6px;
+    max-width: 330px;
+    max-height: auto;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.img_column {
+    max-width: 300px;
+    min-width: 50px;
+}
+
+.separator {
+    width: 12px;
+    min-width: 0px;
+}
+
 .content {
-    font-size: 16px;
+    max-width: 300px;
+    font-size: 17px;
+    margin-left: 24px;
+}
+
+.top-margin {
+    height: 80px;
+}
+
+.left-margin {
+    flex: 0.5;
+    min-width: 24px;
+}
+
+.right-margin {
+    flex: 0.5;
+    min-width: 24px;
 }
 
 .icons-row {
