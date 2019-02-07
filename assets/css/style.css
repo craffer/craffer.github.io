@@ -22,13 +22,23 @@ a:hover {
 
 h1 {
     margin-top: 0px;
+    font-size: 32px;
 }
 
 img {
     max-width: 100%;
-    max-height: 30%; 
+    max-height: 35%; 
 }
 
-.centered {
-    margin: auto;
+i {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.content {
+    font-size: 16px;
+}
+
+.icons-row {
+    font-size: 24px;
 }
