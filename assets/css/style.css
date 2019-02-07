@@ -39,7 +39,7 @@ i {
     flex-wrap: wrap;
 }
 
-.img_column {
+.img-column {
     max-width: 300px;
     min-width: 50px;
 }
