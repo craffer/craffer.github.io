@@ -22,53 +22,9 @@ h1 {
 }
 
 i {
-    padding-left: 3px;
-    padding-right: 3px;
-}
-
-.avatar {
-    object-fit: cover;
-    border-radius: 6px;
-    max-width: 330px;
-    max-height: auto;
-}
-
-.flex-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.img-column {
-    max-width: 300px;
-    min-width: 50px;
-}
-
-.separator {
-    width: 12px;
-    min-width: 0px;
-}
-
-.content {
-    max-width: 300px;
-    font-size: 17px;
-    margin-left: 24px;
-}
-
-.top-margin {
-    height: 80px;
-}
-
-.left-margin {
-    flex: 0.5;
-    min-width: 24px;
-}
-
-.right-margin {
-    flex: 0.5;
-    min-width: 24px;
-}
-
-.icons-row {
     font-size: 24px;
+}
+
+p {
+    font-size: 17px;
 }
