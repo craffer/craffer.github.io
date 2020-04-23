@@ -17,6 +17,7 @@ pre-commit==2.3.0
 PyYAML==5.3.1
 six==1.14.0
 toml==0.10.0
+uWSGI==2.0.18
 virtualenv==20.0.18
 Werkzeug==1.0.1
 zipp==3.1.0
