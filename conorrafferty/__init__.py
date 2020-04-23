@@ -14,5 +14,4 @@ app.config.from_object("conorrafferty.config")
 app.config.from_envvar("FLASK_SETTINGS", silent=True)
 
 # tell our app about our API and views files
-import conorrafferty.api  # noqa: E402  pylint: disable=wrong-import-position
 import conorrafferty.views  # noqa: E402  pylint: disable=wrong-import-position
