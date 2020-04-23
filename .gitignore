@@ -2,6 +2,12 @@ info.txt
 
 # python
 env/
+__pycache__
+*.egg-info
+*.pyc
+
+# js
+node_modules/
 
 # direnv
 .envrc
