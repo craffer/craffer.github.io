@@ -49,39 +49,96 @@
     <div class="container-fluid">
         <div class="d-flex flex-column align-items-center col-md-10 offset-md-1">
             <div class="d-flex flex-column">
-                <h1>Personal Projects</h1>
+                <h1>Projects</h1>
                 <p><a href="{{ url_for('show_index') }}"><i class="fas fa-long-arrow-alt-left small-icon"></i> Back to
                         home</a></p>
 
-                <p>Below are links to and short descriptions of personal projects I've deployed to the web. For source
-                    code
-                    and more, see my <a href="https://github.com/craffer">GitHub profile</a>.</p>
-                <ul class="list-group d-flex text-dark">
-                    <li class="mt-3 list-group-item rounded-top d-flex align-items-center flex-column flex-md-row">
-                        <div class="img-border rounded mr-3 shadow mb-3 mb-md-0">
-                            <img class="project-img" src="{{ url_for('static', filename='images/shuffle.png') }}" />
-                        </div>
-                        <div>
-                            <h4>Random Episode Generator</h5>
-                            <p class="mb-1">A web app to built to combat boredom through streaming services – enter a few of your favorite shows, and you'll get a random episode from one of them to watch.
-                            <p class="mb-2">Full-stack web app with a Flask backend and a React frontend, deployed to a DigitalOcean droplet.</p>
-                            <a href="https://conorrafferty.com/episodes/">Try it!</a>
-                            <br />
-                            <a href="https://github.com/craffer/random-episodes">Source code</a>
-                        </div>
-                    </li>
-                    <li class="list-group-item rounded-bottom d-flex align-items-center flex-column flex-md-row mb-4 mb-md-0">
-                        <div class="img-border rounded mr-3 shadow mb-3 mb-md-0">
-                            <img class="project-img" src="https://espnpressroom.com/us/files/2015/08/FFL-Logo.png" />
-                        </div>
-                        <div>
-                            <h4>ESPN Fantasy Coach of the Year</h4>
-                            <p class="mb-1">Built to settle arguments about exactly why my fantasy football teams always seem to compete but never actually <em>win</em> the league, this web app analyzes game results in a given ESPN Fantasy Football League to crown a Coach of the Year and GM of the Year.</p>
-                            <p class="mb-2">REST API built with a Flask backend and SQLite database, with a front-end and full-stack deployment coming soon.</p>
-                            <a href="https://github.com/craffer/fantasy-coty">Source code</a>
-                        </div>
-                    </li>
-                </ul>
+
+                <div>
+                    <h4>Personal Projects</h4>
+                    <p>Below are links to and short descriptions of personal projects I've deployed to the web. For
+                        source
+                        code
+                        and more, see my <a href="https://github.com/craffer">GitHub profile</a>.</p>
+                    <ul class="list-group d-flex text-dark">
+                        <li class="list-group-item rounded-top d-flex align-items-center flex-column flex-md-row">
+                            <div class="img-border rounded mr-3 shadow mb-3 mb-md-0">
+                                <img class="project-img" src="{{ url_for('static', filename='images/shuffle.png') }}" />
+                            </div>
+                            <div>
+                                <h4>Random Episode Generator</h5>
+                                    <p class="mb-1">A web app to built to combat boredom through streaming services –
+                                        enter a few of your favorite shows, and you'll get a random episode from one of
+                                        them to watch.
+                                        <p class="mb-2">Full-stack web app with a Flask backend and a React frontend,
+                                            deployed to a DigitalOcean droplet.</p>
+                                        <a href="https://conorrafferty.com/episodes/">Try it!</a>
+                                        <br />
+                                        <a href="https://github.com/craffer/random-episodes">Source code</a>
+                            </div>
+                        </li>
+                        <li
+                            class="list-group-item rounded-bottom d-flex align-items-center flex-column flex-md-row mb-4 mb-md-0">
+                            <div class="img-border rounded mr-3 shadow mb-3 mb-md-0">
+                                <img class="project-img"
+                                    src="https://espnpressroom.com/us/files/2015/08/FFL-Logo.png" />
+                            </div>
+                            <div>
+                                <h4>ESPN Fantasy Coach of the Year</h4>
+                                <p class="mb-1">Built to settle arguments about exactly why my fantasy football teams
+                                    always seem to compete but never actually <em>win</em> the league, this web app
+                                    analyzes game results in a given ESPN Fantasy Football League to crown a Coach of
+                                    the Year and GM of the Year.</p>
+                                <p class="mb-2">REST API built with a Flask backend and SQLite database, with a
+                                    front-end and full-stack deployment coming soon.</p>
+                                <a href="https://github.com/craffer/fantasy-coty">Source code</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Class Projects</h4>
+                    <p>I've worked on a lot of projects as part of my classes at Michigan – here are some highlights.
+                        Per University of Michigan rules, most of these projects are in private repositories, but the
+                        code is available upon request.
+                        <ul class="list-group d-flex text-dark">
+                            <li class="list-group-item rounded-top d-flex align-items-center flex-column flex-md-row">
+                                <div class="img-border rounded mr-3 shadow mb-3 mb-md-0">
+                                    <img class="project-img"
+                                        src="{{ url_for('static', filename='images/shuffle.png') }}" />
+                                </div>
+                                <div>
+                                    <h4>Random Episode Generator</h5>
+                                        <p class="mb-1">A web app to built to combat boredom through streaming services
+                                            – enter a few of your favorite shows, and you'll get a random episode from
+                                            one of them to watch.
+                                            <p class="mb-2">Full-stack web app with a Flask backend and a React
+                                                frontend, deployed to a DigitalOcean droplet.</p>
+                                            <a href="https://conorrafferty.com/episodes/">Try it!</a>
+                                            <br />
+                                            <a href="https://github.com/craffer/random-episodes">Source code</a>
+                                </div>
+                            </li>
+                            <li
+                                class="list-group-item rounded-bottom d-flex align-items-center flex-column flex-md-row mb-4 mb-md-0">
+                                <div class="img-border rounded mr-3 shadow mb-3 mb-md-0">
+                                    <img class="project-img"
+                                        src="https://espnpressroom.com/us/files/2015/08/FFL-Logo.png" />
+                                </div>
+                                <div>
+                                    <h4>ESPN Fantasy Coach of the Year</h4>
+                                    <p class="mb-1">Built to settle arguments about exactly why my fantasy football
+                                        teams always seem to compete but never actually <em>win</em> the league, this
+                                        web app analyzes game results in a given ESPN Fantasy Football League to crown a
+                                        Coach of the Year and GM of the Year.</p>
+                                    <p class="mb-2">REST API built with a Flask backend and SQLite database, with a
+                                        front-end and full-stack deployment coming soon.</p>
+                                    <a href="https://github.com/craffer/fantasy-coty">Source code</a>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
             </div>
         </div>
     </div>
