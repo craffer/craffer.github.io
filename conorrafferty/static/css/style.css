@@ -44,6 +44,10 @@ p {
     width: 350px;
 }
 
+.list-group-item {
+    background-color: #F6F6F9;
+}
+
 .list-group-item a:hover {
     color: #292b2c;
 }
