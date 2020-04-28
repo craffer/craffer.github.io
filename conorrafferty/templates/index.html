@@ -19,7 +19,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicon_io/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon_io/favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon_io/favicon-16x16.png') }}">
-    <link rel="manifest" href="/static/images//favicon_io/site.webmanifest">
+    <link rel="manifest" href="{{ url_for('static', filename='images/favicon_io/site.webmanifest') }}">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122645660-1"></script>
@@ -34,6 +34,9 @@
 <body>
     <ul class="nav justify-content-end mt-2">
         <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('show_projects') }}"><i class="fas fa-tools"></i></a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" target="_blank" href="https://github.com/craffer"><i class="fab fa-github"></i></a>
         </li>
         <li class="nav-item">
@@ -45,19 +48,15 @@
         <div class="avatar p-3">
             <img class="img-fluid rounded mt-2" src="{{ url_for('static', filename='images/avatar.jpg') }}" alt="avatar" />
         </div>
-        <div class="bio p-3">
-            <h1>Conor Rafferty</h1>
+        <div class="bio px-3 py-md-3">
+            <h1 class="mt-md-4">Conor Rafferty</h1>
 
             <p>Ann Arbor, MI / Scituate, MA</p>
-            <p>Student studying Computer Science and Business at the University of Michigan.</p>
-            <p>Interested in the web, the future, and how technology can change society. Also interested in trivia,
-                rock climbing, the environment, and movies.</p>
-            <p>I'll be starting full-time work this summer at <a href="https://www.salesforce.com/">Salesforce</a> in
-                San Francisco, but I'm always excited to meet people working on interesting things – reach out to me at
-                the address below!</p>
-
-            <p><a href="{{ url_for('static', filename='files/rafferty_resume.pdf') }}" target="_blank">Resume</a></p>
-            <p><a href="mailto:conor@conorrafferty.com">Email</a></p>
+            <p>Hi, I'm Conor, a recent Computer Science graduate from the University of Michigan.</p>
+            <p>I'm interested in the web, security, and how technology can solve global problems. I'm also interested in trivia,
+                sports, the environment, and movies.</p>
+            <p class="pb-4 pb-md-0">I'll be starting full-time work this summer at <a href="https://www.salesforce.com/">Salesforce</a> in
+                San Francisco, but I'm always excited to meet people working on interesting things – feel free to shoot me an <a href="mailto:conor.rafferty01@gmail.com">email</a>. And while you're here, check out my <a class="font-weight-bold" href="/projects">projects</a> and my <a class="font-weight-bold" href="{{ url_for('static', filename='files/rafferty_resume.pdf') }}" target="_blank">resume</a>!</p>
         </div>
     </div>
 </body>

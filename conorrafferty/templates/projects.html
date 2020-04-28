@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="{{ url_for('static', filename='images/favicon_io/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="{{ url_for('static', filename='images/favicon_io/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="{{ url_for('static', filename='images/favicon_io/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='images/favicon_io/site.webmanifest') }}">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122645660-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-122645660-1');
+    </script>
+</head>
+
+<body>
+    <ul class="nav justify-content-end mt-2">
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-tools"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://github.com/craffer"><i class="fab fa-github"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/conorrafferty01/"><i
+                    class="fab fa-linkedin"></i></a>
+        </li>
+    </ul>
+    <div class="container-fluid">
+        <div class="d-flex flex-column align-items-center col-md-10 offset-md-1">
+            <div class="d-flex flex-column">
+                <h1>Projects</h1>
+                <p><a href="{{ url_for('show_index') }}"><i class="fas fa-long-arrow-alt-left small-icon"></i> Back to
+                        home</a></p>
+
+
+                <div class="mb-4">
+                    <h4>Personal Projects</h4>
+                    <p>Below are links to and short descriptions of personal projects I've deployed to the web. For
+                        source
+                        code
+                        and more, see my <a href="https://github.com/craffer">GitHub profile</a>.</p>
+                    <ul class="list-group d-flex text-dark">
+                        <li class="list-group-item d-flex align-items-center flex-column flex-md-row">
+                            <div class="img-border rounded mr-3 shadow mb-3 mb-md-0">
+                                <img class="project-img" src="{{ url_for('static', filename='images/shuffle.png') }}" />
+                            </div>
+                            <div>
+                                <h4>Random Episode Generator</h4>
+                                <p class="mb-1">A web app to built to combat boredom through streaming services –
+                                    enter a few of your favorite shows, and you'll get a random episode from one of
+                                    them to watch.</p>
+                                <p class="mb-2">Full-stack web app with a Flask back-end and a React front-end,
+                                    deployed to a DigitalOcean droplet.</p>
+                                <a href="https://conorrafferty.com/episodes/">Try it!</a>
+                                <br />
+                                <a href="https://github.com/craffer/random-episodes">Source code</a>
+                            </div>
+                        </li>
+                        <li
+                            class="list-group-item d-flex align-items-center flex-column flex-md-row mb-4 mb-md-0">
+                            <div class="img-border rounded mr-3 shadow mb-3 mb-md-0">
+                                <img class="project-img"
+                                    src="https://espnpressroom.com/us/files/2015/08/FFL-Logo.png" />
+                            </div>
+                            <div>
+                                <h4>ESPN Fantasy Coach of the Year</h4>
+                                <p class="mb-1">Built to settle arguments about exactly why my fantasy football teams
+                                    always seem to compete but never actually <em>win</em> the league, this web app
+                                    analyzes game results in a given ESPN Fantasy Football League to crown a Coach of
+                                    the Year and GM of the Year.</p>
+                                <p class="mb-2">REST API built with a Flask back-end and SQLite database, with a
+                                    front-end and full-stack deployment coming soon.</p>
+                                <a href="https://github.com/craffer/fantasy-coty">Source code</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-4">
+                    <h4>Class Projects</h4>
+                    <p>I've worked on a lot of projects as part of my classes at Michigan – here are some highlights.
+                        Per University of Michigan rules, most of these projects are in private repositories, but the
+                        code is available upon request.
+                        <ul class="list-group d-flex text-dark mb-4">
+                            <li class="list-group-item rounded-top d-flex align-items-center flex-column flex-md-row">
+                                <div class="img-border rounded mr-3 shadow mb-3 mb-md-0">
+                                    <img class="project-img"
+                                        src="https://img.icons8.com/cotton/2x/folder-invoices.png" />
+                                </div>
+                                <div>
+                                    <h4 class="mb-0">Multithreaded Network File Server</h4>
+                                    <small class="text-muted">EECS 482: Operating Systems</small>
+                                    <p class="my-1">A low-level network file server that supports reading and writing to file blocks and creating and deleting directories and files through remote procedure calls.</p>
+                                    <p class="mb-2">Implemented in C++, using Boost threads and shared mutexes.</p>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center flex-column flex-md-row">
+                                <div class="img-border rounded mr-3 shadow mb-3 mb-md-0">
+                                    <img class="project-img"
+                                        src="https://i.pinimg.com/originals/08/17/15/0817158f3a05c0d62de647c28f4cde54.jpg" />
+                                </div>
+                                <div>
+                                    <h4 class="mb-0">Instagram Clone</h4>
+                                    <small class="text-muted">EECS 485: Web Systems</small>
+                                    <p class="my-1">An Instagram clone that supports account creation, uploading photos, commenting, liking, following, and more through a REST API and an interactive UI on the client-side.</p>
+                                    <p class="mb-2">Implemented with a React front-end and a Flask back-end, with a SQLite database.</p>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center flex-column flex-md-row">
+                                <div class="img-border rounded mr-3 shadow mb-3 mb-md-0">
+                                    <img class="project-img"
+                                        src="{{ url_for('static', filename='images/memory.png') }}" />
+                                </div>
+                                <div>
+                                    <h4 class="mb-0">Memory Manager</h4>
+                                    <small class="text-muted">EECS 482: Operating Systems</small>
+                                    <p class="my-1">An OS-level pager to handle memory pages for user applications. Implements system calls that applications can use to create, copy, and destroy address spaces, allocate space in an existing address space, and switch between address spaces.</p>
+                                    <p class="mb-2">Implemented in C++ as an interface to simulated hardware.</p>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center flex-column flex-md-row">
+                                <div class="img-border rounded mr-3 shadow mb-3 mb-md-0">
+                                    <img class="project-img"
+                                        src="https://pngimage.net/wp-content/uploads/2018/06/logo-wikipedia-png-4.png" />
+                                </div>
+                                <div>
+                                    <h4 class="mb-0">Wikipedia Search Engine</h4>
+                                    <small class="text-muted">EECS 485: Web Systems</small>
+                                    <p class="my-1">A scalable search engine for Wikipedia articles that uses a scalable MapReduce indexing algorithm and PageRank scores for results.</p>
+                                    <p class="mb-2">Used a Hadoop pipeline to build the search index, and implemented the search engine with a Flask API and React front-end.</p>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
