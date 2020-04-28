@@ -61,7 +61,7 @@
                         code
                         and more, see my <a href="https://github.com/craffer">GitHub profile</a>.</p>
                     <ul class="list-group d-flex text-dark">
-                        <li class="list-group-item rounded-top d-flex align-items-center flex-column flex-md-row">
+                        <li class="list-group-item d-flex align-items-center flex-column flex-md-row">
                             <div class="img-border rounded mr-3 shadow mb-3 mb-md-0">
                                 <img class="project-img" src="{{ url_for('static', filename='images/shuffle.png') }}" />
                             </div>
@@ -78,7 +78,7 @@
                             </div>
                         </li>
                         <li
-                            class="list-group-item rounded-bottom d-flex align-items-center flex-column flex-md-row mb-4 mb-md-0">
+                            class="list-group-item d-flex align-items-center flex-column flex-md-row mb-4 mb-md-0">
                             <div class="img-border rounded mr-3 shadow mb-3 mb-md-0">
                                 <img class="project-img"
                                     src="https://espnpressroom.com/us/files/2015/08/FFL-Logo.png" />
@@ -115,7 +115,7 @@
                                     <p class="mb-2">Implemented in C++, using Boost threads and shared mutexes.</p>
                                 </div>
                             </li>
-                            <li class="list-group-item rounded-top d-flex align-items-center flex-column flex-md-row">
+                            <li class="list-group-item d-flex align-items-center flex-column flex-md-row">
                                 <div class="img-border rounded mr-3 shadow mb-3 mb-md-0">
                                     <img class="project-img"
                                         src="https://i.pinimg.com/originals/08/17/15/0817158f3a05c0d62de647c28f4cde54.jpg" />
@@ -125,6 +125,18 @@
                                     <small class="text-muted">EECS 485: Web Systems</small>
                                     <p class="my-1">An Instagram clone that supports account creation, uploading photos, commenting, liking, following, and more through a REST API and an interactive UI on the client-side.</p>
                                     <p class="mb-2">Implemented with a React front-end and a Flask back-end, with a SQLite database.</p>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center flex-column flex-md-row">
+                                <div class="img-border rounded mr-3 shadow mb-3 mb-md-0">
+                                    <img class="project-img"
+                                        src="{{ url_for('static', filename='images/memory.png') }}" />
+                                </div>
+                                <div>
+                                    <h4 class="mb-0">Memory Manager</h4>
+                                    <small class="text-muted">EECS 482: Operating Systems</small>
+                                    <p class="my-1">An OS-level pager to handle memory pages for user applications. Implements system calls that applications can use to create, copy, and destroy address spaces, allocate space in an existing address space, and switch between address spaces.</p>
+                                    <p class="mb-2">Implemented in C++ as an interface to simulated hardware.</p>
                                 </div>
                             </li>
                         </ul>
