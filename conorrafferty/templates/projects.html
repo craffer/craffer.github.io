@@ -62,8 +62,9 @@
                         and more, see my <a href="https://github.com/craffer">GitHub profile</a>.</p>
                     <ul class="list-group d-flex text-dark">
                         <li class="list-group-item d-flex align-items-center flex-column flex-md-row">
-                            <div class="img-border rounded mr-3 shadow mb-3 mb-md-0">
-                                <img class="project-img" src="{{ url_for('static', filename='images/shuffle.png') }}" />
+                            <div class="img-border rounded mr-3 shadow my-3 my-md-0">
+                                <img class="project-img p-3"
+                                    src="{{ url_for('static', filename='images/shuffle.png') }}" />
                             </div>
                             <div>
                                 <h4>Random Episode Generator</h4>
@@ -78,12 +79,15 @@
                             </div>
                         </li>
                         <li class="list-group-item d-flex align-items-center flex-column flex-md-row">
-                            <div class="img-border rounded mr-3 shadow mb-3 mb-md-0">
-                                <img class="project-img" src="{{ url_for('static', filename='images/music.png') }}" />
+                            <div class="img-border rounded mr-3 shadow my-3 my-md-0">
+                                <img class="project-img p-3"
+                                    src="{{ url_for('static', filename='images/soundbars.png') }}" />
                             </div>
                             <div>
                                 <h4>Spotify Top Tracks</h4>
-                                <p class="mb-1">A web app for finding the most popular songs from an artist. I was disappointed that Spotify only showed the top 10 most popular songs from a specified artist, so I created this site to show the top 100.</p>
+                                <p class="mb-1">A web app for finding the most popular songs from an artist. I was
+                                    disappointed that Spotify only showed the top 10 most popular songs from a specified
+                                    artist, so I created this site to show the top 100.</p>
                                 <p class="mb-2">Full-stack web app with a Python (Flask) back-end and a React front-end,
                                     deployed on DigitalOcean.</p>
                                 <a href="https://conorrafferty.com/tracks/">Try it!</a>
@@ -91,11 +95,10 @@
                                 <a href="https://github.com/craffer/top-tracks">Source code</a>
                             </div>
                         </li>
-                        <li
-                            class="list-group-item d-flex align-items-center flex-column flex-md-row mb-4 mb-md-0">
-                            <div class="img-border rounded mr-3 shadow mb-3 mb-md-0">
-                                <img class="project-img"
-                                    src="https://espnpressroom.com/us/files/2015/08/FFL-Logo.png" />
+                        <li class="list-group-item d-flex align-items-center flex-column flex-md-row mb-4 mb-md-0">
+                            <div class="img-border rounded mr-3 shadow my-3 my-md-0">
+                                <img class="project-img p-3"
+                                    src="{{ url_for('static', filename='images/football.png') }}" />
                             </div>
                             <div>
                                 <h4>ESPN Fantasy Coach of the Year</h4>
@@ -116,69 +119,86 @@
                     <p>I've worked on a lot of projects as part of my coursework at Michigan – here are some highlights.
                         Per University of Michigan rules, most of these projects are in private repositories, but the
                         code is available upon request.
-                        <ul class="list-group d-flex text-dark mb-4">
-                            <li class="list-group-item rounded-top d-flex align-items-center flex-column flex-md-row">
-                                <div class="img-border rounded mr-3 shadow mb-3 mb-md-0">
-                                    <img class="project-img"
-                                        src="https://img.icons8.com/cotton/2x/folder-invoices.png" />
-                                </div>
-                                <div>
-                                    <h4 class="mb-0">Multithreaded Network File Server</h4>
-                                    <small class="text-muted">EECS 482: Operating Systems</small>
-                                    <p class="my-1">A low-level network file server that supports reading and writing to file blocks and creating and deleting directories and files through remote procedure calls.</p>
-                                    <p class="mb-2">Implemented in C++, using Boost threads and shared mutexes.</p>
-                                </div>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center flex-column flex-md-row">
-                                <div class="img-border rounded mr-3 shadow mb-3 mb-md-0">
-                                    <img class="project-img"
-                                        src="{{ url_for('static', filename='images/insta.png') }}" />
-                                </div>
-                                <div>
-                                    <h4 class="mb-0">Instagram Clone</h4>
-                                    <small class="text-muted">EECS 485: Web Systems</small>
-                                    <p class="my-1">An Instagram clone that supports account creation, uploading photos, commenting, liking, following, and more through a REST API and an interactive UI on the client-side.</p>
-                                    <p class="mb-2">Implemented with a React front-end and a Flask back-end, with a SQLite database.</p>
-                                </div>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center flex-column flex-md-row">
-                                <div class="img-border rounded mr-3 shadow mb-3 mb-md-0">
-                                    <img class="project-img"
-                                        src="https://www.freepnglogos.com/uploads/spotify-logo-png/image-gallery-spotify-logo-21.png" />
-                                </div>
-                                <div>
-                                    <h4 class="mb-0">Spotify Running</h4>
-                                    <small class="text-muted">EECS 497: Human-Centered Development</small>
-                                    <p class="my-1">A re-implementation of an old Spotify feature to match user's running pace to the tempo of their saved songs to help running performance. Built to gain experience designing with the user in mind and developed after a semester of user interviews, prototyping, and more.</p>
-                                    <p class="mb-2">Implemented using the Spotify API and a Flask back-end.</p>
-                                    <a href="https://github.com/craffer/spotify-runners">Source code</a>
-                                </div>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center flex-column flex-md-row">
-                                <div class="img-border rounded mr-3 shadow mb-3 mb-md-0">
-                                    <img class="project-img"
-                                        src="{{ url_for('static', filename='images/memory.png') }}" />
-                                </div>
-                                <div>
-                                    <h4 class="mb-0">Memory Manager</h4>
-                                    <small class="text-muted">EECS 482: Operating Systems</small>
-                                    <p class="my-1">An OS-level pager to handle memory pages for user applications. Implements system calls that applications can use to create, copy, and destroy address spaces, allocate space in an existing address space, and switch between address spaces.</p>
-                                    <p class="mb-2">Implemented in C++ as an interface to simulated hardware.</p>
-                                </div>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center flex-column flex-md-row">
-                                <div class="img-border rounded mr-3 shadow mb-3 mb-md-0">
-                                    <img class="project-img"
-                                        src="https://pngimage.net/wp-content/uploads/2018/06/logo-wikipedia-png-4.png" />
-                                </div>
-                                <div>
-                                    <h4 class="mb-0">Wikipedia Search Engine</h4>
-                                    <small class="text-muted">EECS 485: Web Systems</small>
-                                    <p class="my-1">A search engine for Wikipedia articles that uses a scalable MapReduce indexing algorithm and a combination of PageRank and tf-idf scores for results.</p>
-                                    <p class="mb-2">Used a Hadoop pipeline to build the search index, and implemented the search engine with a Flask API and React front-end.</p>
-                                </div>
-                            </li>
-                        </ul>
+                    <ul class="list-group d-flex text-dark mb-4">
+                        <li class="list-group-item rounded-top d-flex align-items-center flex-column flex-md-row">
+                            <div class="img-border rounded mr-3 shadow my-3 my-md-0">
+                                <img class="project-img p-3"
+                                    src="{{ url_for('static', filename='images/folder.png') }}" />
+                            </div>
+                            <div>
+                                <h4 class="mb-0">Multithreaded Network File Server</h4>
+                                <small class="text-muted">EECS 482: Operating Systems</small>
+                                <p class="my-1">A low-level network file server that supports reading and writing to
+                                    file blocks and creating and deleting directories and files through remote procedure
+                                    calls.</p>
+                                <p class="mb-2">Implemented in C++, using Boost threads and shared mutexes.</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center flex-column flex-md-row">
+                            <div class="img-border rounded mr-3 shadow my-3 my-md-0">
+                                <img class="project-img p-3"
+                                    src="{{ url_for('static', filename='images/instagram.png') }}" />
+                            </div>
+                            <div>
+                                <h4 class="mb-0">Instagram Clone</h4>
+                                <small class="text-muted">EECS 485: Web Systems</small>
+                                <p class="my-1">An Instagram clone that supports account creation, uploading photos,
+                                    commenting, liking, following, and more through a REST API and an interactive UI on
+                                    the client-side.</p>
+                                <p class="mb-2">Implemented with a React front-end and a Flask back-end, with a SQLite
+                                    database.</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center flex-column flex-md-row">
+                            <div class="img-border rounded mr-3 shadow my-3 my-md-0">
+                                <img class="project-img p-3"
+                                    src="{{ url_for('static', filename='images/spotify.png') }}" />
+                            </div>
+                            <div>
+                                <h4 class="mb-0">Spotify Running</h4>
+                                <small class="text-muted">EECS 497: Human-Centered Development</small>
+                                <p class="my-1">A re-implementation of an old Spotify feature to match user's running
+                                    pace to the tempo of their saved songs to help running performance. Built to gain
+                                    experience designing with the user in mind and developed after a semester of user
+                                    interviews, prototyping, and more.</p>
+                                <p class="mb-2">Implemented using the Spotify API and a Flask back-end.</p>
+                                <a href="https://github.com/craffer/spotify-runners">Source code</a>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center flex-column flex-md-row">
+                            <div class="img-border rounded mr-3 shadow my-3 my-md-0">
+                                <img class="project-img p-3"
+                                    src="{{ url_for('static', filename='images/memory.png') }}" />
+                            </div>
+                            <div>
+                                <h4 class="mb-0">Memory Manager</h4>
+                                <small class="text-muted">EECS 482: Operating Systems</small>
+                                <p class="my-1">An OS-level pager to handle memory pages for user applications.
+                                    Implements system calls that applications can use to create, copy, and destroy
+                                    address spaces, allocate space in an existing address space, and switch between
+                                    address spaces.</p>
+                                <p class="mb-2">Implemented in C++ as an interface to simulated hardware.</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center flex-column flex-md-row">
+                            <div class="img-border rounded mr-3 shadow my-3 my-md-0">
+                                <img class="project-img p-3"
+                                    src="{{ url_for('static', filename='images/wikipedia.png') }}" />
+                            </div>
+                            <div>
+                                <h4 class="mb-0">Wikipedia Search Engine</h4>
+                                <small class="text-muted">EECS 485: Web Systems</small>
+                                <p class="my-1">A search engine for Wikipedia articles that uses a scalable MapReduce
+                                    indexing algorithm and a combination of PageRank and tf-idf scores for results.</p>
+                                <p class="mb-2">Used a Hadoop pipeline to build the search index, and implemented the
+                                    search engine with a Flask API and React front-end.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <small>
+                        Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
+                        from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+                    </small>
                 </div>
             </div>
         </div>
