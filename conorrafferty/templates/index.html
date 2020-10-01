@@ -1,62 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Conor Rafferty</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
     <!-- custom css -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
     <!-- font awesome icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
 
     <!-- favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicon_io/apple-touch-icon.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon_io/favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon_io/favicon-16x16.png') }}">
-    <link rel="manifest" href="{{ url_for('static', filename='images/favicon_io/site.webmanifest') }}">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{{ url_for('static', filename='images/favicon_io/apple-touch-icon.png') }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{{ url_for('static', filename='images/favicon_io/favicon-32x32.png') }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{{ url_for('static', filename='images/favicon_io/favicon-16x16.png') }}"
+    />
+    <link
+      rel="manifest"
+      href="{{ url_for('static', filename='images/favicon_io/site.webmanifest') }}"
+    />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122645660-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-122645660-1"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-122645660-1');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-122645660-1");
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <ul class="nav justify-content-end mt-2">
-        <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('show_projects') }}"><i class="fas fa-tools"></i></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://github.com/craffer"><i class="fab fa-github"></i></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/conorrafferty01/"><i
-                    class="fab fa-linkedin"></i></a>
-        </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('show_projects') }}"
+          ><i class="fas fa-tools"></i
+        ></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" target="_blank" href="https://github.com/craffer"
+          ><i class="fab fa-github"></i
+        ></a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          target="_blank"
+          href="https://www.linkedin.com/in/conorrafferty01/"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </li>
     </ul>
-    <div class="d-flex justify-content-center flex-wrap align-items-center tall">
-        <div class="avatar p-3">
-            <img class="img-fluid rounded mt-2" src="{{ url_for('static', filename='images/avatar.jpg') }}" alt="avatar" />
-        </div>
-        <div class="bio px-3 py-md-3">
-            <h1 class="mt-md-4">Conor Rafferty</h1>
+    <div
+      class="d-flex justify-content-center flex-wrap align-items-center tall"
+    >
+      <div class="avatar p-3">
+        <img
+          class="img-fluid rounded mt-2"
+          src="{{ url_for('static', filename='images/avatar.jpg') }}"
+          alt="avatar"
+        />
+      </div>
+      <div class="bio px-3 py-md-3">
+        <h1 class="mt-md-4">Conor Rafferty</h1>
 
-            <h5 class="mb-3">Scituate, MA / San Francisco, CA</h5>
-            <p>Hi, I'm Conor, a recent Computer Science graduate from the University of Michigan.</p>
-            <p>I'm interested in the web, security, and how technology can solve global problems. I'm also interested in trivia, the environment, sports, and sitcoms.</p>
-            <p class="pb-4 pb-md-0">I've just started work at <a href="https://www.salesforce.com/">Salesforce</a> and will be relocating to San Francisco in the next few months. I'm happily employed, but I'm always excited to meet people working on interesting things – feel free to shoot me an <a href="mailto:conor.rafferty01@gmail.com">email</a>. And while you're here, check out my <a class="font-weight-bold" href="/projects">projects</a> and my <a class="font-weight-bold" href="{{ url_for('static', filename='files/rafferty_resume.pdf') }}" target="_blank">resume</a>!</p>
-        </div>
+        <h5 class="mb-3">Scituate, MA / San Francisco, CA</h5>
+        <p>
+          Hi, I'm Conor, a recent Computer Science graduate from the University
+          of Michigan.
+        </p>
+        <p>
+          I'm interested in the web, security, and how technology can solve
+          global problems. I'm also interested in trivia, the environment,
+          sports, and sitcoms.
+        </p>
+        <p class="pb-4 pb-md-0">
+          I've just started work at
+          <a href="https://www.salesforce.com/">Salesforce</a> and will be
+          relocating to San Francisco in the next few months. I'm happily
+          employed, but I'm always excited to meet people working on interesting
+          things – feel free to shoot me an
+          <a href="mailto:conor.rafferty01@gmail.com">email</a>. And while
+          you're here, check out my
+          <a class="font-weight-bold" href="/projects">projects</a> and my
+          <a
+            class="font-weight-bold"
+            href="{{ url_for('static', filename='files/rafferty_resume.pdf') }}"
+            target="_blank"
+            >resume</a
+          >!
+        </p>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
